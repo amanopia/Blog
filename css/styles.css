@@ -1,14 +1,14 @@
+/* TOP CONTAINER */
 #top-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     line-height: 7.5em;
     padding: 8% 10%;
-
-    margin: 0 auto;
 }
 
-.test {
-    margin: 0 auto;
+.outer-container {
+    justify-self: center; /* to horizontlally center image */
+    align-self: center;   /* to vertically center image */
 }
 
 .title {
@@ -18,13 +18,28 @@
 .container-image {
     height: 280px;
     border-radius: 600px;
-
+/* 
     place-self: end;
-    align-self: center;
+    align-self: center; */
 }
 h1 {
     font-family: "Walkind", sans-serif;
     font-size: 7rem;
     /* font-kerning: none; */
     letter-spacing: 0.03em;
+}
+
+.shape1, .shape2 {
+    /* background-color: pink; */
+    height: 200px;
+    width: 200px;
+    border-radius: 68% 32% 81% 19% / 29% 41% 59% 71% ;
+    position: absolute;
+}
+.shape1 {
+    background-color: red;
+}
+
+.shape2 {
+    background-color: blue;
 }
