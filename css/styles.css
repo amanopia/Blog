@@ -1,0 +1,30 @@
+#top-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 7.5em;
+    padding: 8% 10%;
+
+    margin: 0 auto;
+}
+
+.test {
+    margin: 0 auto;
+}
+
+.title {
+    place-self: start;
+}
+
+.container-image {
+    height: 280px;
+    border-radius: 600px;
+
+    place-self: end;
+    align-self: center;
+}
+h1 {
+    font-family: "Walkind", sans-serif;
+    font-size: 7rem;
+    /* font-kerning: none; */
+    letter-spacing: 0.03em;
+}
