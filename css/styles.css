@@ -90,3 +90,53 @@ h1 {
 .animation-delay-2000 {
     animation-delay: 2s;
 }
+
+
+/* FREE ICONS */
+#first-star {
+    height: 4rem;
+    position: absolute;
+    right: 40%;
+}
+#star-icon {
+    height: 5rem;
+    position: absolute;
+    right: 210px;
+    top: 450px;
+}
+
+.move-up {
+    animation: star-move-up 5s infinite both;
+}
+
+.move-down {
+    animation: star-move-down 5s infinite both;
+}
+@keyframes star-move-down {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    60% {
+        transform: translate(0px, 40px) scale(0.6);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes star-move-up{
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    60% {
+        transform: translate(0px, -40px) scale(0.8);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
