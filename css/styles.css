@@ -1,3 +1,6 @@
+body {
+    background-color: #fbfbfb;
+}
 /* TOP CONTAINER */
 #top-container {
     display: grid;
@@ -17,7 +20,7 @@
 
 .container-image {
     height: 280px;
-    border-radius: 600px;
+    /* display: none; */
 /* 
     place-self: end;
     align-self: center; */
@@ -31,15 +34,58 @@ h1 {
 
 .shape1, .shape2 {
     /* background-color: pink; */
-    height: 200px;
-    width: 200px;
+    height: 15rem;
+    width: 15rem;
     border-radius: 68% 32% 81% 19% / 29% 41% 59% 71% ;
     position: absolute;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
 }
 .shape1 {
-    background-color: red;
+    background-color: #957de6;
+    right: 150px;
+    top: 220px;
+    z-index: -1;
 }
 
 .shape2 {
-    background-color: blue;
+    right: 430px;
+    top: 110px;
+    background-color: #ffb067;
+    z-index: -1;
+}
+
+/* animation for shape */
+.scale-up-center {
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+}
+
+
+@keyframes scale-up-center {
+    0% {
+        /* transform: translate(0px, 0px) scale(1); */
+        transform: rotate(0deg) scale(1);
+    }
+
+    33% {
+        /* transform: translate(30px, -50px) scale(1.1); */
+        transform: rotate(60deg) scale(1.2);
+        filter: blur(60px);
+    }
+
+    60% {
+        /* transform: translate(-20px, -20px) scale(0.9); */
+        transform: rotate(360deg) scale(0.9);
+        filter: blur(70px);
+    }
+
+    100% {
+        /* transform: translate(0px, 0px) scale(1); */
+        transform: rotate(0deg) scale(1);
+        filter: blur(25px);
+    }
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
 }
