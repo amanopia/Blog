@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Walkind";
-    src: url("http://fonts.cdnfonts.com/css/walkind");
+    src: url("http://fonts.cdnfonts.com/css/walkind") format("woff"),
+    url("http://fonts.cdnfonts.com/css/walkind") format("woff2");
+    ;
 }
 body {
     background-color: #fbfbfb;
