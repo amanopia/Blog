@@ -140,3 +140,47 @@ h1 {
     }
 
 }
+
+/* ABOUT CONTAINER */
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 150px;
+    padding: 5% 10%;
+    line-height: 1.5em ;
+}
+
+h2 {
+    font-family: "Walkind", sans-serif;
+    letter-spacing: 0.09em;
+    padding-bottom: 30px;
+}
+
+#about p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: justify;
+}
+
+#contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+.contacts p {
+    margin-top: auto;
+}
+
+#left-side {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+#left-side p {
+    color: rgb(239, 130, 106);
+}
+
+#right-side {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
