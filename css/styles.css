@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Walkind";
+    src: url("http://fonts.cdnfonts.com/css/walkind");
+}
 body {
     background-color: #fbfbfb;
 }
