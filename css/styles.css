@@ -22,10 +22,21 @@ body {
 
 .title {
     place-self: start;
+    margin-bottom: 0;
+}
+
+.test {
+    position: absolute;
+    margin: auto auto auto 0.7rem;
+    font-family: 'Montserrat';
+    font-weight: 200 ;
+    font-size: 1.6em;
+
 }
 
 .container-image {
-    height: 280px;
+    /* height: 280px; */
+    width: 20.5vw; 
     /* display: none; */
 /* 
     place-self: end;
@@ -71,7 +82,7 @@ h1 {
     0% {
         /* transform: translate(0px, 0px) scale(1); */
         transform: rotate(0deg) scale(1);
-        filter: blur(35px);
+        filter: blur(25px);
     }
 
     33% {
@@ -89,7 +100,7 @@ h1 {
     100% {
         /* transform: translate(0px, 0px) scale(1); */
         transform: rotate(0deg) scale(1);
-        filter: blur(35px);
+        filter: blur(25px);
     }
 }
 
